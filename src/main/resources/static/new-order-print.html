@@ -63,8 +63,8 @@
             </div>
             <div class="form-row" id="pay_button">
                 <p>Оплатить <strong id="amount">0 руб.</strong></p>
-                <input type="submit" value="Сейчас" id="pay_button_first" onclick="nowSubmit();">
-                <input type="submit" value="Позже" id="pay_button_second" onclick="laterSubmit();">
+                <input type="submit" value="Оплатить сейчас" id="pay_button_first" onclick="nowSubmit();">
+                <input type="submit" value="В корзину" id="pay_button_second" onclick="laterSubmit();">
             </div>
         </form>
         <div style="position:relative;overflow:hidden;" id="map">
@@ -156,7 +156,7 @@ function fileUpload(e) {
             '                        <input type="radio" value="color" name="type-' + fileNum + '">Цветная\n' +
             '                    </fieldset>\n' +
             '                    <p class="container tooltip">\n' +
-            '                        <input type="text" id="file-' + fileNum + '" autocomplete="off" oninput="input_field(this);">\n' +
+            '                        <input type="text" id="file-' + fileNum + '" autocomplete="off" oninput="inputField(this);">\n' +
             '                        <label for="file-' + fileNum + '" class="text-input-label">Выбор страниц:</label>\n' +
             '                        <span class="tooltiptext">Оставьте поле пустым если хотите распечатать файл полностью. Введите нужные номера страниц, разделяя их пробелами. Интервалы страниц укажите через дефис без пробелов. Пример: 1 4 7-8 11-15</span>\n' +
             '                    </p>\n' +
